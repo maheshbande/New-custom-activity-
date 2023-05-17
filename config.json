@@ -1,0 +1,71 @@
+{
+	"workflowApiVersion": "1.1",
+	"type": "REST",
+	
+	"name": "",
+	"id": null,
+	"key": "REST-1",
+	"arguments": {
+	  "execute": {
+		"inArguments": [
+		  {
+			"First_Name": "{{Event.DEAudience-2d0759c5-f929-b434-a04d-d20589423d22.First_Name}}"
+		  },
+		  {
+			"Last_Name": "{{Event.DEAudience-2d0759c5-f929-b434-a04d-d20589423d22.Last_Name}}"
+		  },
+		  {
+			"Email_Address": "{{Event.DEAudience-2d0759c5-f929-b434-a04d-d20589423d22.Email_Address}}"
+		  },
+		  {
+			"Device_Id": "{{Event.DEAudience-2d0759c5-f929-b434-a04d-d20589423d22.Device_Id}}"
+		  },
+		  {
+			"Contact_Key":"{{Event.DEAudience-2d0759c5-f929-b434-a04d-d20589423d22.Contact_Key}}"
+		  },
+		  {
+			"Contact key ":"{{Contact.Key}}"
+		  }
+
+		],
+		"url": "https://app.journeybuildercustomactivity.xyz/excute"
+	  }
+	},
+	"configurationArguments": {
+	  "save": {
+		"url": "https://app.journeybuildercustomactivity.xyz/save",
+		"verb": "POST"
+	  },
+	  "publish": {
+		"url": "https://app.journeybuildercustomactivity.xyz/publish",
+		"verb": "POST"
+	  },
+	  "stop": {
+		"url": "https://app.journeybuildercustomactivity.xyz/stop",
+		"verb": "POST"
+	  },
+	  "validate": {
+		"url": "https://app.journeybuildercustomactivity.xyz/validate",
+		"verb": "POST"
+	  }
+	},
+	"metaData": {
+	  "icon": "icon.png",
+	  "category": "message",
+	  "isConfigured": true
+	},
+	"userInterfaces": {
+	  "configModal": {
+		"height": 400,
+		"width": 1000,
+		"fullscreen": false
+	  }
+	},
+	"editable": true,
+	"outcomes": [
+	  {
+		"next": "WAITBYDURATION-1"
+	  }
+	],
+	"errors": []
+  }
