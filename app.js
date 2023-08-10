@@ -44,8 +44,8 @@ console.log('PORT '+(process.env.DEV_PORT));
  getAuthToken = async () => {
     const response = await axios.post('https://mctj9h-m0vnm4djsbg0sd62mz8lm.auth.marketingcloudapis.com/v2/token', {
         // Include any necessary request parameters for authentication
-        "client_id": "3bodpetzp9pr3ysvy03xujth",
-        "client_secret": "QGBWBe0O3i8xBErQpCzblelr",
+        "client_id": "XXxxxxxx",
+        "client_secret": "XXXXXXXX",
          "account_id" : "514013751",
         "grant_type": "client_credentials"
     });
